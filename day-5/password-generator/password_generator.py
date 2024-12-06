@@ -17,15 +17,16 @@ print(password)
 random.shuffle(password)
 print(password)
 
-# ouput generalte password in proper format
+# ouput generated password in proper format
 # * is unpacking, sep need to be used to remove spaces
 print(*password, sep='')
 
-password_final = ''
+# Different way With loop
+# password_final = ''
 
-for char in password:
-    password_final +=char
+# for char in password:
+#     password_final +=char
 
-print("Pass ", password_final)
+# print("Pass ", password_final)
 
 
