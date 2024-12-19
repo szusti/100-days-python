@@ -13,8 +13,8 @@ def select_winner():
         if bidders_list[person] > highest_bid:
             winning_person = person
             highest_bid = bidders_list[person]
-    test = max(bidders_list)
-    print(test)
+    # above can be shortening with max
+    # winning_person = max(bidders_list.get)
     return winning_person
 
 
