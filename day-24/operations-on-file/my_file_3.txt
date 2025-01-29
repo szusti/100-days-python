@@ -1,0 +1,1 @@
+absolute path, c:\Users\xxxx\Desktop\VMShared\gitHub\python\100-Days-Python\day-24\operations-on-file\my_file_3.txt
