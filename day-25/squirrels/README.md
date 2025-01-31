@@ -1,0 +1,1 @@
+create csv that have small table that contains fur colour and count how many of then are with the use of panda module
