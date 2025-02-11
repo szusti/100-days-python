@@ -49,8 +49,7 @@ def save_file():
         finally:
             website_entry.delete(first=0,last=tk.END)
             password_entry.delete(first=0,last=tk.END)
-
-# ---------------------------- UI SETUP ------------------------------- #
+# -------------------------- FIND PASSWORD -------------------------#
 
 def find_password():
     website = website_entry.get()
@@ -60,9 +59,12 @@ def find_password():
             if website in json_data:
                 messagebox.showinfo(title="Password Info", message=f"For {website}\nEmail/Username: {json_data[website]['email']}\nPassword: {json_data[website]['password']}" )
             else:
-                messagebox.showwarning(title="Not found", message=f"I could not find account for {website}")
-    except:
+                messagebox.showwarning(title="Not found", message=f"I could not find account for: {website}")
+    except FileNotFoundError:
         messagebox.showerror(title="File not found", message=f"Could not find file with passwords\n{FILE_TO_SAVE}")
+
+# ---------------------------- UI SETUP ------------------------------- #
+
 
 window = tk.Tk()
 window.config(width=220, height=220,padx=20,pady=20)
